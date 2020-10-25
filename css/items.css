@@ -1,0 +1,23 @@
+
+/* .item-1{
+    grid-area: first ;
+}
+
+.item-2{
+    grid-area: second ;
+} */
+
+
+#contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-areas : 'first second second' ; */
+
+    height: 300px;
+    background-color: black;
+    column-gap: 10px;
+}
+div {
+    color: white;
+}
+

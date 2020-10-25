@@ -38,9 +38,10 @@ body, html {
 .navbar{
     width: 100%;
     background-color: #4c4c6d;
-    height: 55px;
+    height: 45px;
     position: fixed;
     top:0;
+
 }
 
 .img-main{
@@ -50,7 +51,8 @@ body, html {
     /* top: 50%; */
     /* left: 22%;
     top: 13%; */
-    margin: auto;
+    margin-top: 20px;
+    margin:100px  auto auto   auto;
 }
 
 .f-normal{
@@ -94,6 +96,7 @@ body, html {
     justify-content: space-around;
 }
 
+
 .logo-end{
     /* position: absolute;
     top: 84%;
@@ -114,13 +117,14 @@ body, html {
     /* position: relative;
     top: 10%;     */
     /* left: 33%; */
-    margin: 30px  auto;
+    padding-top: 45px;
+    margin: 0 auto 25px  auto;
 }
 
 .tur-video{
     height: 560px;
     width: 990px;
-    margin: 60px auto;
+    margin: 30px auto;
     border: 4px solid #9e6c36;
 }
 
@@ -130,6 +134,8 @@ body, html {
     background-color: #fff;
     border: 4px solid #9e6c36;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .items{
@@ -142,6 +148,48 @@ body, html {
 
 .pic-champions{
     width: 480px;
-    height: 270px;
-    background-color: #4c4c6d;
+    height: 280px;
+    /* background-color: #4c4c6d; */
+    background-image: url(../image/bg/Main/champion.jpg);
+    background-size: cover;
+}
+
+.pic-items{
+    width: 480px;
+    height: 280px;
+    /* background-color: #4c4c6d; */
+    background-image: url(../image/bg/Main/item2.jpg);
+    background-size: cover;
+}
+
+.nd-feature{
+
+    width: 480px;
+    height: 280px;
+
+    /* margin-top: 40px; */
+}
+
+.tieuDe-feature{
+    font-family: 'Lora', serif;
+    padding-top: 40px;
+    text-align: center;
+    color: #9e6c36;
+    font-size: 150%;
+}
+
+.text-feature{
+    padding: 30px 30px;
+    text-align: center;
+    color: black;
+}
+
+/*---------------------
+    Footer Section
+-----------------------*/
+
+.bg-footer{
+    background-color: #252544;
+    width: 100%;
+    height: 300px;
 }
