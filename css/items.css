@@ -217,6 +217,11 @@ body, html {
     border-bottom: 1px solid #17313a;
 }
 
+.rt-rt-group:hover{
+    transition: all .3s;
+    background-color: #091a24;
+}
+
 .recipe{
     display: flex;
     width: 60px;
@@ -239,7 +244,7 @@ body, html {
 }
 
 .characters-table:hover{
-    transition: all 0.5s;
+    transition: all .3s;
     border: 1px solid #d47559;
 }
 
