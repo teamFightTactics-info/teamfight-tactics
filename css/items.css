@@ -78,7 +78,7 @@ body, html {
 
 .characters-category h3{
     margin: 0;
-    width: 120px;
+    width: 135px;
     border-bottom: 4px solid #d47559;
     padding: 0 10px 10px;
     /* text-decoration: underline;
@@ -117,6 +117,7 @@ body, html {
     max-width: 40px;
     background-size: cover;
     opacity: 0.5;
+    border: 1px solid #17313a;
 }
 
 
@@ -234,6 +235,12 @@ body, html {
     margin-right: 20px;
     /* padding-top: 10px; */
     overflow: auto;
+    border: 1px solid #17313a;
+}
+
+.characters-table:hover{
+    transition: all 0.5s;
+    border: 1px solid #d47559;
 }
 
 .combines-into{
@@ -244,5 +251,7 @@ body, html {
 .items-bonus{
     margin-left: 10px;
     color: #b0bdc2;
+    margin-top: auto;
+    margin-bottom: auto;
     /* padding: 10px; */
 }
