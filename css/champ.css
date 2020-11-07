@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #0D202B;
+}
+
+.f-normal{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.f-no-normal{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.bg-box{
+    display: flex;
+}
+
+.dis-grid{
+    display: grid;
+}
+
+
+#contain{
+    margin: 100px auto;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-areas : 'first second second' ; */
+    width:  1200px;
+    height: auto;
+
+}
+
+.filter{
+    /* border-right: 1px solid #17313a; */
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+
+
+.title{
+    color: #fff;
+    font-size: 100%;
+}
+
+.champ-list{
+    padding: 0 0 0 30px;
+    border-left: 1px solid #17313a;
+}
+
+.divider{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #17313a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.characters-list{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.coin-5{
+    border: 1px solid #b89d27;
+}
+
+.coin-4{
+    border: 1px solid #893088;
+}
+
+.coin-3{
+    border: 1px solid #12407c;
+}
+
+.coin-2{
+    border: 1px solid #156831;
+}
+
+.coin-1{
+    border: 1px solid #213042;
+}
+
+.characters-items{
+    max-height: 55px;
+    max-width: 55px;
+    background-size: cover;
+    /* opacity: 0.5; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.f-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #88a0a7;
+    line-height: 1.3em;
+    /* font-weight: 400; */
+    margin: 5px;
+    margin-bottom: 20px;
+    /* margin: ; */
+}
