@@ -1,0 +1,251 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #0D202B;
+}
+
+.f-normal{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.f-no-normal{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.bg-box{
+    display: flex;
+}
+
+.dis-grid{
+    display: grid;
+}
+
+
+#contain{
+    margin: 100px auto;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-areas : 'first second second' ; */
+    width:  1200px;
+    height: auto;
+
+}
+
+.name{
+    /* border-right: 1px solid #17313a; */
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+
+
+.title{
+    color: #fff;
+    font-size: 130%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .champ-list{
+    padding: 0 0 0 30px;
+    border-left: 1px solid #17313a;
+} */
+
+.divider{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #17313a;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.character-items h2{
+    /* margin: 0;
+    width: 200px;
+    border-bottom: 4px solid #d47559;
+    padding: 0 10px 10px; */
+    /* text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #d47559;; */
+    /* text-decoration-style:  4px solid; */
+
+}
+
+.character-portrait{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.character-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 200px;
+    overflow: hidden;
+    border: 1px solid #17313a;
+    margin-bottom: 10px;
+}
+
+/* .character-items{
+
+} */
+
+.character-header{
+    display: inline-block;
+    padding: 0 10px 15px;
+    border-bottom: 4px solid #d47559;
+    margin: 0;
+}
+
+.items-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background: #102531;
+    border: 1px solid #17313a;
+    padding: 10px;
+}
+
+.character-icon{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 0 10px;
+}
+
+/* .character-stats{
+    padding: 0px;
+} */
+
+.stats-list{
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+
+.bold{
+    font-weight: 350;
+    color: #88a0a7;
+    font-weight: bold;
+    /* margin-top: 10px; */
+}
+
+.bold-text{
+    font-weight: 350;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.gold-icon{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 15px!important;
+    height: auto!important;
+    border: none!important;
+}
+
+.abilities{
+    padding: 0 0 0 30px;
+    border-left: 1px solid #17313a;
+}
+
+.character-ability{
+    display: flex;
+    background: #102531;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 1px solid #17313a;
+}
+
+.ability-image{
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    padding: 2px;
+    border: 1px solid #17313a;
+}
+
+.ability-description{
+    color: hsla(0,0%,100%,.9);
+    margin-left: 30px;
+    width: 100%;
+}
+
+.ability-description-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.character-ability .ability-description .ability-description-header .ability-description-name h2{
+    margin-bottom: 5px;
+}
+
+h4 {
+    color: #88a0a7;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+p{
+    color: #88a0a7;
+    line-height: 1em;
+    margin: 0 0 20px;
+    max-width: 700px;
+    margin-bottom: 0px;
+    font-size: 120%;
+}
+
+.misc-image{
+    width: 32px;
+    height: 32px;
+}
+
+.ability-bonus-item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.ability-bonus-value{
+    font-size: 120%;
+}
+
+.ability-bonus-count{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #88a0a7;
+    font-weight: 600;
+    margin-right: 15px;
+    border: 1px solid #17313a;
+    border-radius: 100px;
+    cursor: default;
+}
