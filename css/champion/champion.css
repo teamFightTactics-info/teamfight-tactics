@@ -249,3 +249,42 @@ p{
     border-radius: 100px;
     cursor: default;
 }
+
+.synergy-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #102531;
+    border: 1px solid #17313a;
+    border-radius: 3px;
+}
+
+
+.coin-5{
+    border: 1px solid #b89d27;
+}
+
+.coin-4{
+    border: 1px solid #893088;
+}
+
+.coin-3{
+    border: 1px solid #12407c;
+}
+
+.coin-2{
+    border: 1px solid #156831;
+}
+
+.coin-1{
+    border: 1px solid #213042;
+}
+
+.characters-item{
+    width: 10%;
+    padding: 5px 10px;
+    justify-items: flex-start;
+}
+
