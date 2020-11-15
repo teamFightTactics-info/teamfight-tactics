@@ -1,305 +1,1077 @@
 let contain = document.getElementById('champ')
 const Champ = {
     Cost1: `
-    <div id='diana' class="characters-items coin-1"></div>
-    <div id='elise' class="characters-items coin-1"></div>
-    <div id='fiora' class="characters-items coin-1"></div>
-    <div id='garen' class="characters-items coin-1"></div>
-    <div id='nami' class="characters-items coin-1"></div>
-    <div id='nid' class="characters-items coin-1"></div>
-    <div id='maokai' class="characters-items coin-1"></div>
-    <div id='tahm' class="characters-items coin-1"></div>
-    <div id='tf' class="characters-items coin-1"></div>
-    <div id='vayne' class="characters-items coin-1"></div>
-    <div id='wukong' class="characters-items coin-1"></div>
-    <div id='ys' class="characters-items coin-1"></div>
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Diana.png" alt="">
+        <p class="f-title">Diana</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Elise.png" alt="">
+        <p class="f-title">Elise</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Fiora.png" alt="">
+        <p class="f-title">Fiora</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Garen.png" alt="">
+        <p class="f-title">Garen</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Lissandra.png" alt="">
+        <p class="f-title">Lissandra</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Maokai.png" alt="">
+        <p class="f-title">Maokai</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Nami.png" alt="">
+        <p class="f-title">Nami</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Nidalee.png" alt="">
+        <p class="f-title">Nidalee</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/TahmKench.png" alt="">
+        <p class="f-title">Tahm Kench</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/TwistedFate.png" alt="">
+        <p class="f-title">Twisted Fate</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Vayne.png" alt="">
+        <p class="f-title">Vayne</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Wukong.png" alt="">
+        <p class="f-title">Wukong</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Yasuo.png" alt="">
+        <p class="f-title">Yasuo</p>
+    </a>
+
+
     `,
     Cost2: `
-    <div id='annie' class="characters-items coin-2"></div>
-    <div id='aphelios' class="characters-items coin-2"></div>
-    <div id='hecarim' class="characters-items coin-2"></div>
-    <div id='janna' class="characters-items coin-2"></div>
-    <div id='j4' class="characters-items coin-2"></div>
-    <div id='jax' class="characters-items coin-2"></div>
-    <div id='liss' class="characters-items coin-2"></div>
-    <div id='lulu' class="characters-items coin-2"></div>
-    <div id='pyke' class="characters-items coin-2"></div>
-    <div id='sylas' class="characters-items coin-2"></div>
-    <div id='teemo' class="characters-items coin-2"></div>
-    <div id='thresh' class="characters-items coin-2"></div>
-    <div id='vi' class="characters-items coin-2"></div>
-    <div id='zed' class="characters-items coin-2"></div>
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Annie.png" alt="">
+        <p class="f-title">Annie</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Aphelios.png" alt="">
+        <p class="f-title">Aphelios</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Hecarim.png" alt="">
+        <p class="f-title">Hecarim</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Janna.png" alt="">
+        <p class="f-title">Janna</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/JarvanIV.png" alt="">
+        <p class="f-title">Jarvan IV</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Jax.png" alt="">
+        <p class="f-title">Jax</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Lulu.png" alt="">
+        <p class="f-title">Lulu</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Pyke.png" alt="">
+        <p class="f-title">Pyke</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Sylas.png" alt="">
+        <p class="f-title">Sylas</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Teemo.png" alt="">
+        <p class="f-title">Teemo</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Thresh.png" alt="">
+        <p class="f-title">Thresh</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Vi.png" alt="">
+        <p class="f-title">Vi</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Zed.png" alt="">
+        <p class="f-title">Zed</p>
+    </a>
     `,
     Cost3: `
-    <div id='akali' class="characters-items coin-3"></div>
-    <div id='evelynn' class="characters-items coin-3"></div>
-    <div id='irelia' class="characters-items coin-3"></div>
-    <div id='jinx' class="characters-items coin-3"></div>
-    <div id='kalista' class="characters-items coin-3"></div>
-    <div id='kata' class="characters-items coin-3"></div>
-    <div id='kennen' class="characters-items coin-3"></div>
-    <div id='kindred' class="characters-items coin-3"></div>
-    <div id='lux' class="characters-items coin-3"></div>
-    <div id='nunu' class="characters-items coin-3"></div>
-    <div id='veigar' class="characters-items coin-3"></div>
-    <div id='xinzhao' class="characters-items coin-3"></div>
-    <div id='yuumi' class="characters-items coin-3"></div>
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Akali.png" alt="">
+        <p class="f-title">Akali</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Evelynn.png" alt="">
+        <p class="f-title">Evelynn</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Irelia.png" alt="">
+        <p class="f-title">Irelia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Jinx.png" alt="">
+        <p class="f-title">Jinx</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kalista.png" alt="">
+        <p class="f-title">Kalista</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Katarina.png" alt="">
+        <p class="f-title">Katarina</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kennen.png" alt="">
+        <p class="f-title">Kennen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kindred.png" alt="">
+        <p class="f-title">Kindred</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Lux.png" alt="">
+        <p class="f-title">Lux</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Nunu.png" alt="">
+        <p class="f-title">Nunu</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Veigar.png" alt="">
+        <p class="f-title">Veigar</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/XinZhao.png" alt="">
+        <p class="f-title">Xin Zhao</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Yuumi.png" alt="">
+        <p class="f-title">Yuumi</p>
+    </a>
     `,
     Cost4: `
-    <div id='aatrox' class="characters-items coin-4"></div>
-    <div id='ahri' class="characters-items coin-4"></div>
-    <div id='ashe' class="characters-items coin-4"></div>
-    <div id='cassiopeia' class="characters-items coin-4"></div>
-    <div id='jhin' class="characters-items coin-4"></div>
-    <div id='mor' class="characters-items coin-4"></div>
-    <div id='riven' class="characters-items coin-4"></div>
-    <div id='sejuani' class="characters-items coin-4"></div>
-    <div id='shen' class="characters-items coin-4"></div>
-    <div id='talon' class="characters-items coin-4"></div>
-    <div id='warwich' class="characters-items coin-4"></div>
+    <a  href="" style="text-decoration: none;" id='aatrox'>
+        <img class="characters-items coin-4 " src="../image/champions/Aatrox.png" alt="">
+        <p class="f-title">Aatrox</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4 spirit mage" src="../image/champions/Ahri.png" alt="">
+        <p class="f-title">Ahri</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Ashe.png" alt="">
+        <p class="f-title">Ashe</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Cassiopeia.png" alt="">
+        <p class="f-title">Cassiopeia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Jhin.png" alt="">
+        <p class="f-title">Jhin</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Morgana.png" alt="">
+        <p class="f-title">Morgana</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Riven.png" alt="">
+        <p class="f-title">Riven</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Sejuani.png" alt="">
+        <p class="f-title">Sejuani</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Shen.png" alt="">
+        <p class="f-title">Shen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Talon.png" alt="">
+        <p class="f-title">Talon</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Warwick.png" alt="">
+        <p class="f-title">Warwick</p>
+    </a>,
     `,
     Cost5: `
-    <div id='azir' class="characters-items coin-5 "></div>
-    <div id='ez' class="characters-items coin-5"></div>
-    <div id='kayn' class="characters-items coin-5"></div>
-    <div id='lee' class="characters-items coin-5"></div>
-    <div id='lilia' class="characters-items coin-5"></div>
-    <div id='sett' class="characters-items coin-5"></div>
-    <div id='yone' class="characters-items coin-5"></div>
-    <div id='zilean' class="characters-items coin-5"></div>
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Azir.png" alt="">
+        <p class="f-title">Azir</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Ezreal.png" alt="">
+        <p class="f-title">Ezreal</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Kayn.png" alt="">
+        <p class="f-title">Kayn</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/LeeSin.png" alt="">
+        <p class="f-title">Lee Sin</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Lillia.png" alt="">
+        <p class="f-title">Lillia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Sett.png" alt="">
+        <p class="f-title">Sett</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Yone.png" alt="">
+        <p class="f-title">Yone</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Zilean.png" alt="">
+        <p class="f-title">Zilean</p>
+    </a>
     `,
     Reset:`
-    <div id='aatrox' class="characters-items coin-4"></div>
-    <div id='ahri' class="characters-items coin-4"></div>
-    <div id='akali' class="characters-items coin-3"></div>
-    <div id='annie' class="characters-items coin-2"></div>
-    <div id='aphelios' class="characters-items coin-2"></div>
-    <div id='ashe' class="characters-items coin-4"></div>
-    <div id='azir' class="characters-items coin-5 "></div>
-    <div id='cassiopeia' class="characters-items coin-4"></div>
-    <div id='diana' class="characters-items coin-1"></div>
-    <div id='elise' class="characters-items coin-1"></div>
-    <div id='evelynn' class="characters-items coin-3"></div>
-    <div id='ez' class="characters-items coin-5"></div>
-    <div id='fiora' class="characters-items coin-1"></div>
-    <div id='garen' class="characters-items coin-1"></div>
-    <div id='hecarim' class="characters-items coin-2"></div>
-    <div id='irelia' class="characters-items coin-3"></div>
-    <div id='janna' class="characters-items coin-2"></div>
-    <div id='j4' class="characters-items coin-2"></div>
-    <div id='jax' class="characters-items coin-2"></div>
-    <div id='jhin' class="characters-items coin-4"></div>
-    <div id='jinx' class="characters-items coin-3"></div>
-    <div id='kalista' class="characters-items coin-3"></div>
-    <div id='kata' class="characters-items coin-3"></div>
-    <div id='kayn' class="characters-items coin-5"></div>
-    <div id='kennen' class="characters-items coin-3"></div>
-    <div id='kindred' class="characters-items coin-3"></div>
-    <div id='lee' class="characters-items coin-5"></div>
-    <div id='lilia' class="characters-items coin-5"></div>
-    <div id='liss' class="characters-items coin-2"></div>
-    <div id='lulu' class="characters-items coin-2"></div>
-    <div id='lux' class="characters-items coin-3"></div>
-    <div id='maokai' class="characters-items coin-1"></div>
-    <div id='mor' class="characters-items coin-4"></div>
-    <div id='nami' class="characters-items coin-1"></div>
-    <div id='nid' class="characters-items coin-1"></div>
-    <div id='nunu' class="characters-items coin-3"></div>
-    <div id='pyke' class="characters-items coin-2"></div>
-    <div id='riven' class="characters-items coin-4"></div>
-    <div id='sejuani' class="characters-items coin-4"></div>
-    <div id='sett' class="characters-items coin-5"></div>
-    <div id='shen' class="characters-items coin-4"></div>
-    <div id='sylas' class="characters-items coin-2"></div>
-    <div id='tahm' class="characters-items coin-1"></div>
-    <div id='talon' class="characters-items coin-4"></div>
-    <div id='teemo' class="characters-items coin-2"></div>
-    <div id='thresh' class="characters-items coin-2"></div>
-    <div id='tf' class="characters-items coin-1"></div>
-    <div id='vayne' class="characters-items coin-1"></div>
-    <div id='veigar' class="characters-items coin-3"></div>
-    <div id='vi' class="characters-items coin-2"></div>
-    <div id='warwich' class="characters-items coin-4"></div>
-    <div id='wukong' class="characters-items coin-1"></div>
-    <div id='xinzhao' class="characters-items coin-3"></div>
-    <div id='ys' class="characters-items coin-1"></div>
-    <div id='yone' class="characters-items coin-5"></div>
-    <div id='yuumi' class="characters-items coin-3"></div>
-    <div id='zed' class="characters-items coin-2"></div>
-    <div id='zilean' class="characters-items coin-5"></div>
+    <a href="" style="text-decoration: none;" id='aatrox'>
+    <img class="characters-items coin-4 " src="../image/champions/Aatrox.png" alt="">
+    <p class="f-title">Aatrox</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4 spirit mage" src="../image/champions/Ahri.png" alt="">
+    <p class="f-title">Ahri</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Akali.png" alt="">
+    <p class="f-title">Akali</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Annie.png" alt="">
+    <p class="f-title">Annie</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Aphelios.png" alt="">
+    <p class="f-title">Aphelios</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Ashe.png" alt="">
+    <p class="f-title">Ashe</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/Azir.png" alt="">
+    <p class="f-title">Azir</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Cassiopeia.png" alt="">
+    <p class="f-title">Cassiopeia</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Diana.png" alt="">
+    <p class="f-title">Diana</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Elise.png" alt="">
+    <p class="f-title">Elise</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Evelynn.png" alt="">
+    <p class="f-title">Evelynn</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/Ezreal.png" alt="">
+    <p class="f-title">Ezreal</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Fiora.png" alt="">
+    <p class="f-title">Fiora</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Garen.png" alt="">
+    <p class="f-title">Garen</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Hecarim.png" alt="">
+    <p class="f-title">Hecarim</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Irelia.png" alt="">
+    <p class="f-title">Irelia</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Janna.png" alt="">
+    <p class="f-title">Janna</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/JarvanIV.png" alt="">
+    <p class="f-title">Jarvan IV</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Jax.png" alt="">
+    <p class="f-title">Jax</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Jhin.png" alt="">
+    <p class="f-title">Jhin</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Jinx.png" alt="">
+    <p class="f-title">Jinx</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Kalista.png" alt="">
+    <p class="f-title">Kalista</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Katarina.png" alt="">
+    <p class="f-title">Katarina</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/Kayn.png" alt="">
+    <p class="f-title">Kayn</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Kennen.png" alt="">
+    <p class="f-title">Kennen</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Kindred.png" alt="">
+    <p class="f-title">Kindred</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/LeeSin.png" alt="">
+    <p class="f-title">Lee Sin</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/Lillia.png" alt="">
+    <p class="f-title">Lillia</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Lissandra.png" alt="">
+    <p class="f-title">Lissandra</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Lulu.png" alt="">
+    <p class="f-title">Lulu</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Lux.png" alt="">
+    <p class="f-title">Lux</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Maokai.png" alt="">
+    <p class="f-title">Maokai</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Morgana.png" alt="">
+    <p class="f-title">Morgana</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Nami.png" alt="">
+    <p class="f-title">Nami</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Nidalee.png" alt="">
+    <p class="f-title">Nidalee</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Nunu.png" alt="">
+    <p class="f-title">Nunu</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Pyke.png" alt="">
+    <p class="f-title">Pyke</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Riven.png" alt="">
+    <p class="f-title">Riven</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Sejuani.png" alt="">
+    <p class="f-title">Sejuani</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/Sett.png" alt="">
+    <p class="f-title">Sett</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Shen.png" alt="">
+    <p class="f-title">Shen</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Sylas.png" alt="">
+    <p class="f-title">Sylas</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/TahmKench.png" alt="">
+    <p class="f-title">Tahm Kench</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Talon.png" alt="">
+    <p class="f-title">Talon</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Teemo.png" alt="">
+    <p class="f-title">Teemo</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Thresh.png" alt="">
+    <p class="f-title">Thresh</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/TwistedFate.png" alt="">
+    <p class="f-title">Twisted Fate</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Vayne.png" alt="">
+    <p class="f-title">Vayne</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Veigar.png" alt="">
+    <p class="f-title">Veigar</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Vi.png" alt="">
+    <p class="f-title">Vi</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-4" src="../image/champions/Warwick.png" alt="">
+    <p class="f-title">Warwick</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Wukong.png" alt="">
+    <p class="f-title">Wukong</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/XinZhao.png" alt="">
+    <p class="f-title">Xin Zhao</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-1" src="../image/champions/Yasuo.png" alt="">
+    <p class="f-title">Yasuo</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/Yone.png" alt="">
+    <p class="f-title">Yone</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-3" src="../image/champions/Yuumi.png" alt="">
+    <p class="f-title">Yuumi</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-2" src="../image/champions/Zed.png" alt="">
+    <p class="f-title">Zed</p>
+</a>
+
+<a href="" style="text-decoration: none;">
+    <img class="characters-items coin-5" src="../image/champions/Zilean.png" alt="">
+    <p class="f-title">Zilean</p>
+</a>
     `,
     Cultist:`
-    <div id='aatrox' class="characters-items coin-4 cultist"></div>
-    <div id='elise' class="characters-items coin-1 cultist"></div>
-    <div id='evelynn' class="characters-items coin-3 cultist"></div>
-    <div id='jhin' class="characters-items coin-4 cultist"></div>
-    <div id='kalista' class="characters-items coin-3 cultist"></div>
-    <div id='pyke' class="characters-items coin-2 cultist"></div>
-    <div id='tf' class="characters-items coin-1 cultist"></div>
-    <div id='zilean' class="characters-items coin-5 cultist"></div>
+    <a  href="" style="text-decoration: none;" id='aatrox'>
+        <img class="characters-items coin-4 " src="../image/champions/Aatrox.png" alt="">
+        <p class="f-title">Aatrox</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Elise.png" alt="">
+        <p class="f-title">Elise</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Evelynn.png" alt="">
+        <p class="f-title">Evelynn</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Jhin.png" alt="">
+        <p class="f-title">Jhin</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kalista.png" alt="">
+        <p class="f-title">Kalista</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Pyke.png" alt="">
+        <p class="f-title">Pyke</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/TwistedFate.png" alt="">
+        <p class="f-title">Twisted Fate</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Zilean.png" alt="">
+        <p class="f-title">Zilean</p>
+    </a>,
+
     `,
     Divine:`
-    <div id='irelia' class="characters-items coin-3 divine enlightened"></div>
-    <div id='jax' class="characters-items coin-2 divine"></div>
-    <div id='lee' class="characters-items coin-5 divine"></div>
-    <div id='lux' class="characters-items coin-3 divine"></div>
-    <div id='warwich' class="characters-items coin-4 divine"></div>
-    <div id='wukong' class="characters-items coin-1 divine"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Irelia.png" alt="">
+        <p class="f-title">Irelia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Jax.png" alt="">
+        <p class="f-title">Jax</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/LeeSin.png" alt="">
+        <p class="f-title">Lee Sin</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Lux.png" alt="">
+        <p class="f-title">Lux</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Warwick.png" alt="">
+        <p class="f-title">Warwick</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Wukong.png" alt="">
+        <p class="f-title">Wukong</p>
+    </a>
     `,
     Dusk:`
-    <div id='cassiopeia' class="characters-items coin-4 dusk"></div>
-    <div id='lilia' class="characters-items coin-5 dusk"></div>
-    <div id='riven' class="characters-items coin-4 dusk"></div>
-    <div id='thresh' class="characters-items coin-2 dusk"></div>
-    <div id='vayne' class="characters-items coin-1 dusk"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Cassiopeia.png" alt="">
+        <p class="f-title">Cassiopeia</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Lillia.png" alt="">
+        <p class="f-title">Lillia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Riven.png" alt="">
+        <p class="f-title">Riven</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Thresh.png" alt="">
+        <p class="f-title">Thresh</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Vayne.png" alt="">
+        <p class="f-title">Vayne</p>
+    </a>,
     `,
     Elderwood:`
-    <div id='ashe' class="characters-items coin-4 elderwood"></div>
-    <div id='ez' class="characters-items coin-5 elderwood"></div>
-    <div id='hecarim' class="characters-items coin-2 elderwood"></div>           
-    <div id='lulu' class="characters-items coin-2 elderwood"></div>
-    <div id='maokai' class="characters-items coin-1 elderwood"></div>
-    <div id='nunu' class="characters-items coin-3 elderwood"></div>
-    <div id='veigar' class="characters-items coin-3 elderwood"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Ashe.png" alt="">
+        <p class="f-title">Ashe</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Ezreal.png" alt="">
+        <p class="f-title">Ezreal</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Hecarim.png" alt="">
+        <p class="f-title">Hecarim</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Lulu.png" alt="">
+        <p class="f-title">Lulu</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Maokai.png" alt="">
+        <p class="f-title">Maokai</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Nunu.png" alt="">
+        <p class="f-title">Nunu</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Veigar.png" alt="">
+        <p class="f-title">Veigar</p>
+    </a>,
     `,
     Enlightened:`
-    <div id='fiora' class="characters-items coin-1 enlightened"></div>
-    <div id='irelia' class="characters-items coin-3 divine enlightened"></div>
-    <div id='janna' class="characters-items coin-2 enlightened"></div>
-    <div id='mor' class="characters-items coin-4 enlightened"></div>
-    <div id='nami' class="characters-items coin-1 enlightened"></div>
-    <div id='talon' class="characters-items coin-4 enlightened"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Fiora.png" alt="">
+        <p class="f-title">Fiora</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Irelia.png" alt="">
+        <p class="f-title">Irelia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Janna.png" alt="">
+        <p class="f-title">Janna</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Morgana.png" alt="">
+        <p class="f-title">Morgana</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Nami.png" alt="">
+        <p class="f-title">Nami</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Talon.png" alt="">
+        <p class="f-title">Talon</p>
+    </a>
     `,
     Exile:`
-    <div id='ys' class="characters-items coin-1 exile"></div>
-    <div id='yone' class="characters-items coin-5 exile"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Yasuo.png" alt="">
+        <p class="f-title">Yasuo</p>
+    </a>,
+    <a  href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Yone.png" alt="">
+        <p class="f-title">Yone</p>
+    </a>
     `,
     Fortune:`
-    <div id='annie' class="characters-items coin-2 fortune"></div>
-    <div id='jinx' class="characters-items coin-3 fortune"></div>
-    <div id='kata' class="characters-items coin-3 fortune warlord"></div>
-    <div id='sejuani' class="characters-items coin-4 fortune"></div>
-    <div id='tahm' class="characters-items coin-1 fortune"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Annie.png" alt="">
+        <p class="f-title">Annie</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Jinx.png" alt="">
+        <p class="f-title">Jinx</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Katarina.png" alt="">
+        <p class="f-title">Katarina</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Sejuani.png" alt="">
+        <p class="f-title">Sejuani</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/TahmKench.png" alt="">
+        <p class="f-title">Tahm Kench</p>
+    </a>
     `,
     Moonlight:`
-    <div id='aphelios' class="characters-items coin-2 moonlight"></div>
-    <div id='diana' class="characters-items coin-1 moonlight"></div>
-    <div id='liss' class="characters-items coin-2 moonlight"></div>
-    <div id='sylas' class="characters-items coin-2 moonlight"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Aphelios.png" alt="">
+        <p class="f-title">Aphelios</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Diana.png" alt="">
+        <p class="f-title">Diana</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Lissandra.png" alt="">
+        <p class="f-title">Lissandra</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Sylas.png" alt="">
+        <p class="f-title">Sylas</p>
+    </a>
     `,
     Ninja:`
-    <div id='akali' class="characters-items coin-3 ninja"></div>
-    <div id='kennen' class="characters-items coin-3 ninja"></div>
-    <div id='shen' class="characters-items coin-4 ninja"></div>
-    <div id='zed' class="characters-items coin-2 ninja"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Akali.png" alt="">
+        <p class="f-title">Akali</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kennen.png" alt="">
+        <p class="f-title">Kennen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Shen.png" alt="">
+        <p class="f-title">Shen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Zed.png" alt="">
+        <p class="f-title">Zed</p>
+    </a>
     `,
     Spirit:`
-    <div id='ahri' class="characters-items coin-4 spirit"></div>
-    <div id='kindred' class="characters-items coin-3 spirit"></div>
-    <div id='teemo' class="characters-items coin-2 spirit"></div>
-    <div id='yuumi' class="characters-items coin-3 spirit"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4 spirit mage" src="../image/champions/Ahri.png" alt="">
+        <p class="f-title">Ahri</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kindred.png" alt="">
+        <p class="f-title">Kindred</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Teemo.png" alt="">
+        <p class="f-title">Teemo</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Yuumi.png" alt="">
+        <p class="f-title">Yuumi</p>
+    </a>
     `,
     TheBoss:`
-    <div id='sett' class="characters-items coin-5 theboss"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Sett.png" alt="">
+        <p class="f-title">Sett</p>
+    </a>
     `,
     Tormented:`
-    <div id='kayn' class="characters-items coin-5 tormented"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Kayn.png" alt="">
+        <p class="f-title">Kayn</p>
+    </a>
     `,
     Warlord:`
-    <div id='azir' class="characters-items coin-5 warlord"></div>
-    <div id='garen' class="characters-items coin-1 warlord"></div>
-    <div id='j4' class="characters-items coin-2 warlord"></div>
-    <div id='kata' class="characters-items coin-3 fortune warlord"></div>
-    <div id='nid' class="characters-items coin-1 warlord"></div>
-    <div id='vi' class="characters-items coin-2 warlord"></div>
-    <div id='xinzhao' class="characters-items coin-3 warlord"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Azir.png" alt="">
+        <p class="f-title">Azir</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Garen.png" alt="">
+        <p class="f-title">Garen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/JarvanIV.png" alt="">
+        <p class="f-title">Jarvan IV</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Katarina.png" alt="">
+        <p class="f-title">Katarina</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Nidalee.png" alt="">
+        <p class="f-title">Nidalee</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Vi.png" alt="">
+        <p class="f-title">Vi</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/XinZhao.png" alt="">
+        <p class="f-title">Xin Zhao</p>
+    </a>
     `,
     Adept:`
-    <div id='irelia' class="characters-items coin-3 divine enlightened adept"></div>
-    <div id='shen' class="characters-items coin-4 ninja adept mystic"></div>
-    <div id='yone' class="characters-items coin-5 exile adept"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Irelia.png" alt="">
+        <p class="f-title">Irelia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Shen.png" alt="">
+        <p class="f-title">Shen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Yone.png" alt="">
+        <p class="f-title">Yone</p>
+    </a>,
+
     `,
     Assasin:`
-    <div id='akali' class="characters-items coin-3 ninja assasin"></div>
-    <div id='diana' class="characters-items coin-1 moonlight assasin"></div>
-    <div id='kata' class="characters-items coin-3 fortune warlord assasin"></div>
-    <div id='pyke' class="characters-items coin-2 cultist assasin"></div>
-    <div id='talon' class="characters-items coin-4 enlightened assasin"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Akali.png" alt="">
+        <p class="f-title">Akali</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Diana.png" alt="">
+        <p class="f-title">Diana</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Katarina.png" alt="">
+        <p class="f-title">Katarina</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Pyke.png" alt="">
+        <p class="f-title">Pyke</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Talon.png" alt="">
+        <p class="f-title">Talon</p>
+    </a>
     `,
     Brawler:`
-    <div id='maokai' class="characters-items coin-1 elderwood brawler"></div>
-    <div id='nunu' class="characters-items coin-3 elderwood brawler"></div>
-    <div id='sett' class="characters-items coin-5 theboss brawler"></div>
-    <div id='sylas' class="characters-items coin-2 moonlight brawler"></div>
-    <div id='tahm' class="characters-items coin-1 fortune brawler"></div>
-    <div id='vi' class="characters-items coin-2 warlord brawler"></div>
-    <div id='warwich' class="characters-items coin-4 divine brawler hunter"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Maokai.png" alt="">
+        <p class="f-title">Maokai</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Nunu.png" alt="">
+        <p class="f-title">Nunu</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Sett.png" alt="">
+        <p class="f-title">Sett</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Sylas.png" alt="">
+        <p class="f-title">Sylas</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/TahmKench.png" alt="">
+        <p class="f-title">Tahm Kench</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Vi.png" alt="">
+        <p class="f-title">Vi</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Warwick.png" alt="">
+        <p class="f-title">Warwick</p>
+    </a>
     `,
     Dazzler:`
-    <div id='ez' class="characters-items coin-5 elderwood dazzler"></div>
-    <div id='liss' class="characters-items coin-2 moonlight dazzler"></div>
-    <div id='lux' class="characters-items coin-3 divine dazzler"></div>
-    <div id='mor' class="characters-items coin-4 enlightened dazzler"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Ezreal.png" alt="">
+        <p class="f-title">Ezreal</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Lissandra.png" alt="">
+        <p class="f-title">Lissandra</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Lux.png" alt="">
+        <p class="f-title">Lux</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Morgana.png" alt="">
+        <p class="f-title">Morgana</p>
+    </a>
     `,
     Duelist:`
-    <div id='fiora' class="characters-items coin-1 enlightened duelist"></div>
-    <div id='jax' class="characters-items coin-2 divine duelist"></div>
-    <div id='kalista' class="characters-items coin-3 cultist duelist"></div>
-    <div id='lee' class="characters-items coin-5 divine duelist"></div>
-    <div id='xinzhao' class="characters-items coin-3 warlord duelist"></div>
-    <div id='ys' class="characters-items coin-1 exile duelist"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Fiora.png" alt="">
+        <p class="f-title">Fiora</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Jax.png" alt="">
+        <p class="f-title">Jax</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kalista.png" alt="">
+        <p class="f-title">Kalista</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/LeeSin.png" alt="">
+        <p class="f-title">Lee Sin</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/XinZhao.png" alt="">
+        <p class="f-title">Xin Zhao</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Yasuo.png" alt="">
+        <p class="f-title">Yasuo</p>
+    </a>
     `,
     Emperor:`
-    <div id='azir' class="characters-items coin-5 warlord emperor keeper"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Azir.png" alt="">
+        <p class="f-title">Azir</p>
+    </a>
     `,
     Hunter:`
-    <div id='aphelios' class="characters-items coin-2 moonlight hunter"></div>
-    <div id='ashe' class="characters-items coin-4 elderwood hunter"></div>
-    <div id='kindred' class="characters-items coin-3 spirit hunter"></div>
-    <div id='warwich' class="characters-items coin-4 divine brawler hunter"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Aphelios.png" alt="">
+        <p class="f-title">Aphelios</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Ashe.png" alt="">
+        <p class="f-title">Ashe</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kindred.png" alt="">
+        <p class="f-title">Kindred</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Warwick.png" alt="">
+        <p class="f-title">Warwick</p>
+    </a>,
     `,
     Keeper:`
-    <div id='azir' class="characters-items coin-5 warlord emperor keeper"></div>
-    <div id='elise' class="characters-items coin-1 cultist keeper"></div>
-    <div id='j4' class="characters-items coin-2 warlord keeper"></div>
-    <div id='kennen' class="characters-items coin-3 ninja keeper"></div>
-    <div id='riven' class="characters-items coin-4 dusk keeper"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Azir.png" alt="">
+        <p class="f-title">Azir</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Elise.png" alt="">
+        <p class="f-title">Elise</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/JarvanIV.png" alt="">
+        <p class="f-title">Jarvan IV</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Kennen.png" alt="">
+        <p class="f-title">Kennen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Riven.png" alt="">
+        <p class="f-title">Riven</p>
+    </a>
     `,
     Mage:`
-    <div id='ahri' class="characters-items coin-4 spirit mage"></div>
-    <div id='annie' class="characters-items coin-2 fortune mage"></div>
-    <div id='lilia' class="characters-items coin-5 dusk mage"></div>
-    <div id='lulu' class="characters-items coin-2 elderwood mage"></div>
-    <div id='nami' class="characters-items coin-1 enlightened mage"></div>
-    <div id='tf' class="characters-items coin-1 cultist mage"></div>
-    <div id='veigar' class="characters-items coin-3 elderwood mage"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4 spirit mage" src="../image/champions/Ahri.png" alt="">
+        <p class="f-title">Ahri</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Annie.png" alt="">
+        <p class="f-title">Annie</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Lillia.png" alt="">
+        <p class="f-title">Lillia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Lulu.png" alt="">
+        <p class="f-title">Lulu</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Nami.png" alt="">
+        <p class="f-title">Nami</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/TwistedFate.png" alt="">
+        <p class="f-title">Twisted Fate</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Veigar.png" alt="">
+        <p class="f-title">Veigar</p>
+    </a>
     `,
     Mystic:`
-    <div id='cassiopeia' class="characters-items coin-4 dusk mystic"></div>
-    <div id='janna' class="characters-items coin-2 enlightened mystic"></div>
-    <div id='shen' class="characters-items coin-4 ninja adept mystic"></div>
-    <div id='yuumi' class="characters-items coin-3 spirit mystic"></div>
-    <div id='zilean' class="characters-items coin-5 cultist mystic"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Cassiopeia.png" alt="">
+        <p class="f-title">Cassiopeia</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Janna.png" alt="">
+        <p class="f-title">Janna</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Shen.png" alt="">
+        <p class="f-title">Shen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Yuumi.png" alt="">
+        <p class="f-title">Yuumi</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Zilean.png" alt="">
+        <p class="f-title">Zilean</p>
+    </a>
     `,
     Shade:`
-    <div id='evelynn' class="characters-items coin-3 cultist shade"></div>
-    <div id='kayn' class="characters-items coin-5 tormented shade"></div>
-    <div id='zed' class="characters-items coin-2 ninja shade"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Evelynn.png" alt="">
+        <p class="f-title">Evelynn</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-5" src="../image/champions/Kayn.png" alt="">
+        <p class="f-title">Kayn</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Zed.png" alt="">
+        <p class="f-title">Zed</p>
+    </a>,
     `,
     Sharpshooter:`
-    <div id='jhin' class="characters-items coin-4 cultist sharpshooter"></div>
-    <div id='jinx' class="characters-items coin-3 fortune sharpshooter"></div>
-    <div id='nid' class="characters-items coin-1 warlord sharpshooter"></div>
-    <div id='teemo' class="characters-items coin-2 spirit sharpshooter"></div>
-    <div id='vayne' class="characters-items coin-1 dusk sharpshooter"></div>
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-3" src="../image/champions/Jinx.png" alt="">
+        <p class="f-title">Jinx</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Jhin.png" alt="">
+        <p class="f-title">Jhin</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Nidalee.png" alt="">
+        <p class="f-title">Nidalee</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Teemo.png" alt="">
+        <p class="f-title">Teemo</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Vayne.png" alt="">
+        <p class="f-title">Vayne</p>
+    </a>
     `,
     Vanguard:`
-    <div id='aatrox' class="characters-items coin-4 cultist vanguard"></div>
-    <div id='garen' class="characters-items coin-1 warlord vanguard"></div>
-    <div id='hecarim' class="characters-items coin-2 elderwood vanguard"></div>
-    <div id='sejuani' class="characters-items coin-4 fortune vanguard "></div>
-    <div id='thresh' class="characters-items coin-2 dusk vanguard"></div>
-    <div id='wukong' class="characters-items coin-1 divine vanguard"></div>
+    <a href="" style="text-decoration: none;" id='aatrox'>
+        <img class="characters-items coin-4 " src="../image/champions/Aatrox.png" alt="">
+        <p class="f-title">Aatrox</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Garen.png" alt="">
+        <p class="f-title">Garen</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Hecarim.png" alt="">
+        <p class="f-title">Hecarim</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-4" src="../image/champions/Sejuani.png" alt="">
+        <p class="f-title">Sejuani</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-2" src="../image/champions/Thresh.png" alt="">
+        <p class="f-title">Thresh</p>
+    </a>,
+    <a href="" style="text-decoration: none;">
+        <img class="characters-items coin-1" src="../image/champions/Wukong.png" alt="">
+        <p class="f-title">Wukong</p>
+    </a>
     `,
 }
 
