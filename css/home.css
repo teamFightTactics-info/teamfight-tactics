@@ -59,7 +59,7 @@ html {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    width: 30%;
+    width: 25%;
 }
 
 .nav-links a{
