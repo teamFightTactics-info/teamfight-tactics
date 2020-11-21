@@ -22,15 +22,47 @@ body, html {
 
 .bg-box{
     display: flex;
+    
 }
 
 .dis-grid{
     display: grid;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background-color: #22223f;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+  }
+  
+  .nav-links{
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      width: 25%;
+  }
+  
+  .nav-links a{
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 14px;
+  }
 
 #contain{
-    margin: 100px auto;
+    margin: 100px  auto;
+    
     /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 2fr;

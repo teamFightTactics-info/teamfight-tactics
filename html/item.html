@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif; -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@900&family=PT+Serif:wght@700&family=Rajdhani:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif;
+        font-family: 'Merriweather', serif;
+        font-family: 'PT Serif', serif;
+        font-family: 'Rajdhani', sans-serif; -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- font-family: 'Merriweather Sans', sans-serif; -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lora', serif; -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/items.css">
+
+</head>
+
+<body>
+    <nav class="navbar f-no-normal">
+        <div class="logo">
+            <a href="" style="color: #fff;text-decoration: none;">
+                <img style="height: 22px;" src="../image/brand.svg" alt="">
+            </a>
+            
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="champ.html">Champions</a>
+            </li>
+            <li>
+                <a href="item.html">Items</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="bg-box">
+        <div id="contain">
+            <!-- Choose -->
+            <div class="choose">
+                <div class="title f-no-normal">
+                    <h1>Choose an Item</h1>
+                </div>
+                <!-- Base item -->
+                <div class="characters-category f-no-normal">
+                    <h3> Base Items</h3>
+                </div>
+
+                <div class="">
+                    <div class="characters-item img-items dis-grid">
+                        <div class="character-warpper" name="B.F Sword" onclick="BFSword()">
+                            <img class="characters-icon slected" src="../image/items/base items/BFSword.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Chain Vest" onclick="ChainVest()">
+                            <img class="characters-icon" src="../image/items/base items/ChainVest.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Giant's Belt" onclick="GiantsBelt()">
+                            <img class="characters-icon" src="../image/items/base items/GiantsBelt.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Needlessly Large Rod" onclick="NeedlesslyLargeRod()">
+                            <img class="characters-icon" src="../image/items/base items/NeedlesslyLargeRod.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Negatron Cloak" onclick="NegatronCloak()">
+                            <img class="characters-icon" src="../image/items/base items/NegatronCloak.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Recurve Bow" onclick="RecurveBow()">
+                            <img class="characters-icon" src="../image/items/base items/RecurveBow.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Sparring Gloves" onclick="SparringGloves()">
+                            <img class="characters-icon" src="../image/items/base items/SparringGloves.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Spatula" onclick="Spatula()">
+                            <img class="characters-icon" src="../image/items/base items/Spatula.png" alt="">
+                        </div>
+
+                        <div class="character-warpper" name="Tear of the Goddess" onclick="TearOfTheGoddess()">
+                            <img class="characters-icon" src="../image/items/base items/TearoftheGoddess.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Combined Items -->
+                <div class="characters-category f-no-normal">
+                    <h3> Combined Items</h3>
+                </div>
+                <div class="">
+                    <div class="characters-item img-items dis-grid">
+                        <div class="character-warpper margin-center" name="Bloodthirster" onclick="Bloodthirster()">
+                            <img class="characters-icon" src="../image/items/combined items/Bloodthirster.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Blue Buff" onclick="BlueBuff()">
+                            <img class="characters-icon" src="../image/items/combined items/BlueBuff.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Bramble Vest" onclick="BrambleVest()">
+                            <img class="characters-icon" src="../image/items/combined items/BrambleVest.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Chalice of Power" onclick="ChaliceOfPower()">
+                            <img class="characters-icon" src="../image/items/combined items/ChaliceofPower.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Deathblade" onclick="Deathblade()">
+                            <img class="characters-icon" src="../image/items/combined items/Deathblade.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Dragon's Claw" onclick="DragonsClaw()">
+                            <img class="characters-icon" src="../image/items/combined items/DragonsClaw.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Duelist's Zeal" onclick="DuelistsZeal()">
+                            <img class="characters-icon" src="../image/items/combined items/DuelistsZeal.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Elderwood Heirloom" onclick="ElderwoodHeirloom()">
+                            <img class="characters-icon" src="../image/items/combined items/ElderwoodHeirloom.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Force of Nature" onclick="ForceOfNature()">
+                            <img class="characters-icon" src="../image/items/combined items/ForceofNature.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Frozen Heart" onclick="FrozenHeart()">
+                            <img class="characters-icon" src="../image/items/combined items/FrozenHeart.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Gargoyle Stoneplate" onclick="GargoyleStoneplate()">
+                            <img class="characters-icon" src="../image/items/combined items/GargoyleStoneplate.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Giant Slayer" onclick="GiantSlayer()">
+                            <img class="characters-icon" src="../image/items/combined items/GiantSlayer.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Guardian Angel" onclick="GuardianAndel()">
+                            <img class="characters-icon" src="../image/items/combined items/GuardianAngel.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Guinsoo's Rageblade" onclick="GuinsoosRageblade()">
+                            <img class="characters-icon" src="../image/items/combined items/GuinsoosRageblade.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Hand of Justice" onclick="HandOfJustice()">
+                            <img class="characters-icon" src="../image/items/combined items/HandofJustice.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Hextech Gunblade" onclick="HextechGunblade()">
+                            <img class="characters-icon" src="../image/items/combined items/HextechGunblade.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Infinity Edge" onclick="InfinityEdge()">
+                            <img class="characters-icon" src="../image/items/combined items/InfinityEdge.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Ionic Spark" onclick="InoicSpark()">
+                            <img class="characters-icon" src="../image/items/combined items/IonicSpark.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Jeweled Gauntlet" onclick="JeweledGaunlet()">
+                            <img class="characters-icon" src="../image/items/combined items/JeweledGauntlet.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Last Whisper" onclick="LastWhisper()">
+                            <img class="characters-icon" src="../image/items/combined items/LastWhisper.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Locket of the Iron Solari" onclick="LocketOfTheIronSolari()">
+                            <img class="characters-icon" src="../image/items/combined items/LocketoftheIronSolari.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Luden's Echo" onclick="LudensEcho()">
+                            <img class="characters-icon" src="../image/items/combined items/LudensEcho.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Mage's Cap" onclick="MagesCap()">
+                            <img class="characters-icon" src="../image/items/combined items/MagesCap.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Mantle of Dusk" onclick="MantleOfDusk()">
+                            <img class="characters-icon" src="../image/items/combined items/MantleofDusk.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Morellonomicon" onclick="Morellonomicon()">
+                            <img class="characters-icon" src="../image/items/combined items/Morellonomicon.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Quicksilver" onclick="Quicksilver()">
+                            <img class="characters-icon" src="../image/items/combined items/Quicksilver.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Rabadon's Deathcap" onclick="RabadonsDeathcap()">
+                            <img class="characters-icon" src="../image/items/combined items/RabadonsDeathcap.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Rapid Firecannon" onclick="RapidFirecannon()">
+                            <img class="characters-icon" src="../image/items/combined items/RapidFirecannon.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Redemption" onclick="Redemption()">
+                            <img class="characters-icon" src="../image/items/combined items/Redemption.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Runaan's Hurricane" onclick="RunaansHurricane()">
+                            <img class="characters-icon" src="../image/items/combined items/RunaansHurricane.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Shroud of Stillness" onclick="ShroudOfStillness()">
+                            <img class="characters-icon" src="../image/items/combined items/ShroudofStillness.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Spear of Shojin" onclick="SpearOfShojin()">
+                            <img class="characters-icon" src="../image/items/combined items/SpearofShojin.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Statikk Shiv" onclick="StatikkShiv()">
+                            <img class="characters-icon" src="../image/items/combined items/StatikkShiv.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Sunfire Capen" onclick="SunfireCapen()">
+                            <img class="characters-icon" src="../image/items/combined items/SunfireCape.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Sword of the Divine" onclick="SwordOfTheDivine()">
+                            <img class="characters-icon" src="../image/items/combined items/SwordoftheDivine.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Thief's Gloves" onclick="ThiefsGloves()">
+                            <img class="characters-icon" src="../image/items/combined items/ThiefsGloves.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Titan's Resolve" onclick="TitansResolve()">
+                            <img class="characters-icon" src="../image/items/combined items/TitansResolve.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Trap Claw" onclick="TrapClaw()">
+                            <img class="characters-icon" src="../image/items/combined items/TrapClaw.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Vanguard's Cuirass" onclick="VanguardsCuirass()">
+                            <img class="characters-icon" src="../image/items/combined items/VanguardsCuirass.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Warlord's Banner" onclick="WarlordsBanner()">
+                            <img class="characters-icon" src="../image/items/combined items/WarlordsBanner.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Warmog's Armor" onclick="WarmogsArmor()">
+                            <img class="characters-icon" src="../image/items/combined items/WarmogsArmor.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Youmuu's Ghostblade" onclick="YoumuusGhostblade()">
+                            <img class="characters-icon" src="../image/items/combined items/YoumuusGhostblade.png"
+                                alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Zeke's Herald" onclick="ZekesHerald()">
+                            <img class="characters-icon" src="../image/items/combined items/ZekesHerald.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Zephyr" onclick="Zephyr()">
+                            <img class="characters-icon" src="../image/items/combined items/Zephyr.png" alt="">
+                        </div>
+
+                        <div class="character-warpper margin-center" name="Zz'Rot Portal" onclick="ZzRotPortal()">
+                            <img class="characters-icon" src="../image/items/combined items/ZzRotPortal.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- sheet -->
+            <div class="sheet">
+                <div class="title f-no-normal">
+                    <h1>TFT Items Cheat Sheet</h1>
+                </div>
+                <div class="divider"></div>
+                <div class="item-builder-header">
+                    <div class="character-warpper" name="B.F Sword">
+                        <img class="characters-iconS-header" src="../image/items/base items/BFSword.png" alt="">
+                    </div>
+                    <div class="title-page-header f-title">B.F Sword</div>
+                </div>
+
+                <div class="react-table">
+                    <div class="rt-table">
+                        <div class="rt-thead ">
+                            <div class="header-table dis-grid">
+                                <div class="title-recipe f-title">Recipe</div>
+                                <div class="title-combine f-title">Combines Into</div>
+                            </div>
+                            <div id="rt-rt-first"></div>
+                            <div id="rt-rt-second"></div>
+                            <div id="rt-rt-third"></div>
+                            <div id="rt-rt-fourth"></div>
+                            <div id="rt-rt-fifth"></div>
+                            <div id="rt-rt-sixth"></div>
+                            <div id="rt-rt-seventh"></div>
+                            <div id="rt-rt-eighth"></div>
+                            <div id="rt-rt-last"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/item.js"></script>
+
+</body>
+
+</html>
