@@ -71,40 +71,40 @@
                     <div><button id="reset" onclick='Reset()'>Reset</button></li></div>
                 </div>
                 <div class="divider"></div>
-                <div id="cost">
+                <div id="cost " class="f-no-normal"  >
                     <!--Giá tiền -->
-                    <ul class="text">
-                        <div id="costReset">
-                            <div>
-                            <li style="list-style: none;" ><button class="cost" data-toggle="collapse" id='CostBar'
+                    <ul class="text " style="padding-left: 5px;">
+                        <div  >
+                            <div >
+                            <li style="list-style: none; " ><button class="cost-main f-no-normal "  data-toggle="collapse" id='CostBar'
                                         data-target='#lol'>Cost</button>
                             </div>
 
                         </div>
-                        <div id='lol'>
+                        <div id='lol' style="height: auto;list-style: none;">
                             <!-- Làm button -->
-                            <li><button class='cost' id='G1' onclick="Cost1()">1G</button></li>
-                            <li><button class='cost' id="G2" onclick="Cost2()">2G</button></li>
-                            <li><button class="cost" id="G3" onclick="Cost3()">3G</button></li>
-                            <li><button class="cost" id="G4" onclick="Cost4()">4G</button></li>
-                            <li><button class='cost' id="G5" onclick="Cost5()">5G</button></li>
+                            <li><button class='cost-sp' id='G1' onclick="Cost1()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt=""> 1G</button></li>
+                            <li><button class='cost-sp' id="G2" onclick="Cost2()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt="">  2G</button></li>
+                            <li><button class="cost-sp" id="G3" onclick="Cost3()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt="">3G</button></li>
+                            <li><button class="cost-sp" id="G4" onclick="Cost4()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt="">4G</button></li>
+                            <li><button class='cost-sp' id="G5" onclick="Cost5()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt="">5G</button></li>
                         </div>
                     </ul>
                 </div>
-                <div class="origin" id='origin'>
-                    <ul class="text2">
+                <div class="origin f-no-normal" id='origin'>
+                    <ul class="text2 " style="padding-left: 5px;">
                         <div class="originbox">
-                            <li style="list-style: none;" id='OriginBar'><button class="origin1" id='OriBar'
+                            <li style="list-style: none;" class="cost-main f-no-normal " id='OriginBar'><button class="origin1" id='OriBar'
                                     data-toggle="collapse" data-target='#origin2'>Origin</button>
                         </div>
-                        <div id="origin2">
-                            <li><button class='original' id='cultist' onclick="Cultist()">Cultist</button></li>
-                            <li><button class="original" id="divine" onclick="Divine()">Divine</button></li>
-                            <li><button class="original" id="dusk" onclick="Dusk()">Dusk</button></li>
-                            <li><button class="original" id="elderwood" onclick="Elderwood()">Elderwood</button></li>
-                            <li><button class="original" id="enlightened" onclick="Enlightened()">Enlightened</button>
+                        <div id="origin2" style="height: auto;list-style: none;" class="">
+                            <li><button class='original' id='cultist' onclick="Cultist()"><img class="ori-img"  src="../image/origin/cultist.png" alt="">Cultist</button></li>
+                            <li><button class="original" id="divine" onclick="Divine()"><img class="ori-img"  src="../image/origin/divine.png" alt="">Divine</button></li>
+                            <li><button class="original" id="dusk" onclick="Dusk()"><img class="ori-img"  src="../image/origin/dusk.png" alt="">Dusk</button></li>
+                            <li><button class="original" id="elderwood" onclick="Elderwood()"><img class="ori-img"  src="../image/origin/elderwood.png" alt="">Elderwood</button></li>
+                            <li><button class="original" id="enlightened" onclick="Enlightened()"><img class="ori-img"  src="../image/origin/enlightened.png" alt="">Enlightened</button>
                             </li>
-                            <li><button class="original" id="exile" onclick="Exile()">Exile</button></li>
+                            <li><button class="original" id="exile" onclick="Exile()"><img class="ori-img"  src="../image/origin/enlightened.png" alt="">Exile</button></li>
                             <li><button class="original" id="fortune" onclick="Fortune()">Fortune</button></li>
                             <li><button class="original" id="moonlight" onclick="Moonlight()">Moonlight</button></li>
                             <li><button class="original" id="ninja" onclick="Ninja()">Ninja</button></li>

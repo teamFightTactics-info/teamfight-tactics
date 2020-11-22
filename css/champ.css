@@ -160,5 +160,54 @@ body, html {
 }
 button{
     background-color: #0D202B;
-    border: 1px #17313A solid;
+    border: none;
+}
+
+.cost-main{
+    background-color: #0D202B;
+    width: 100%;
+    border: none;
+    border-left: 5px solid #227aad;
+    text-align: left;
+    height: 35px;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.cost-sp{
+    background-color: #0D202B;
+    width: 100%;
+    border: none;
+    
+    text-align: left;
+    height: 35px;
+    font-size: 15px;
+    color: #8f989d;
+}
+
+.cost-img{
+    width: 15px!important;
+    height: auto!important;
+    border: none!important;
+    margin-right: 10px;
+    opacity: .54;
+    transition: opacity .3s;
+}
+
+.ori-img{
+    margin-right: 10px;
+    width: 24px;
+    opacity: .8;
+}
+
+.original{
+    background-color: #0D202B;
+    width: 100%;
+    border: none;
+    
+    text-align: left;
+    height: 35px;
+    font-size: 15px;
+    color: #8f989d;
 }
