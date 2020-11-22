@@ -43,14 +43,14 @@
 
     <nav class="navbar f-no-normal">
         <div class="logo">
-            <a href="" style="color: #fff;text-decoration: none;">
+            <a href="home.html" style="color: #fff;text-decoration: none;">
                 <img style="height: 22px;" src="../image/brand.svg" alt="">
             </a>
             
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Home</a>
+                <a href="home.html">Home</a>
             </li>
             <li>
                 <a href="champ.html">Champions</a>
@@ -83,7 +83,7 @@
                         </div>
                         <div id='lol' style="height: auto;list-style: none;">
                             <!-- Làm button -->
-                            <li><button class='cost-sp' id='G1' onclick="Cost1()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt=""> 1G</button></li>
+                            <li class="cost-circle"><button class='cost-sp' id='G1' onclick="Cost1()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt=""> 1G</button></li>
                             <li><button class='cost-sp' id="G2" onclick="Cost2()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt="">  2G</button></li>
                             <li><button class="cost-sp" id="G3" onclick="Cost3()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt="">3G</button></li>
                             <li><button class="cost-sp" id="G4" onclick="Cost4()"><img class="cost-img"  src="https://rerollcdn.com/ui/icon-gold.svg" alt="">4G</button></li>
@@ -104,38 +104,38 @@
                             <li><button class="original" id="elderwood" onclick="Elderwood()"><img class="ori-img"  src="../image/origin/elderwood.png" alt="">Elderwood</button></li>
                             <li><button class="original" id="enlightened" onclick="Enlightened()"><img class="ori-img"  src="../image/origin/enlightened.png" alt="">Enlightened</button>
                             </li>
-                            <li><button class="original" id="exile" onclick="Exile()"><img class="ori-img"  src="../image/origin/enlightened.png" alt="">Exile</button></li>
-                            <li><button class="original" id="fortune" onclick="Fortune()">Fortune</button></li>
-                            <li><button class="original" id="moonlight" onclick="Moonlight()">Moonlight</button></li>
-                            <li><button class="original" id="ninja" onclick="Ninja()">Ninja</button></li>
-                            <li><button class="original" id="spirit" onclick="Spirit()">Spirit</button></li>
-                            <li><button class="original" id="theboss" onclick="TheBoss()">The Boss</button></li>
-                            <li><button class="original" id="tormented" onclick="Tormented()">Tormented</button></li>
-                            <li><button class="original" id="warlord" onclick="Warlord()">Warlord</button></li>
+                            <li><button class="original" id="exile" onclick="Exile()"><img class="ori-img"  src="../image/origin/exile.png" alt="">Exile</button></li>
+                            <li><button class="original" id="fortune" onclick="Fortune()"><img class="ori-img"  src="../image/origin/fortune.png" alt="">Fortune</button></li>
+                            <li><button class="original" id="moonlight" onclick="Moonlight()"><img class="ori-img"  src="../image/origin/moonlight.png" alt="">Moonlight</button></li>
+                            <li><button class="original" id="ninja" onclick="Ninja()"><img class="ori-img"  src="../image/origin/ninja.png" alt="">Ninja</button></li>
+                            <li><button class="original" id="spirit" onclick="Spirit()"><img class="ori-img"  src="../image/origin/spirit.png" alt="">Spirit</button></li>
+                            <li><button class="original" id="theboss" onclick="TheBoss()"><img class="ori-img"  src="../image/origin/theboss.png" alt="">The Boss</button></li>
+                            <li><button class="original" id="tormented" onclick="Tormented()"><img class="ori-img"  src="../image/origin/tormented.png" alt="">Tormented</button></li>
+                            <li><button class="original" id="warlord" onclick="Warlord()"><img class="ori-img"  src="../image/origin/warlord.png" alt="">Warlord</button></li>
                         </div>
                     </ul>
                 </div>
-                <div id="class">
-                    <ul class="text3">
+                <div id="class" class="f-no-normal">
+                    <ul class="text3" style="padding-left: 5px;">
                         <div class="classbox">
-                            <li style="list-style: none;" id='ClassBar'><button class="class1" id='ClaBar'
+                            <li style="list-style: none;" id='ClassBar'class="cost-main f-no-normal " ><button class="class1" id='ClaBar'
                                     data-toggle="collapse" data-target='#class2'>Class</button>
                         </div>
-                        <div id="class2">
-                            <li><button class="class" id="adept" onclick="Adept()">Adept</button></li>
-                            <li><button class="class" id="assasin" onclick="Assasin()">Assasin</button></li>
-                            <li><button class="class" id="brawler" onclick="Brawler()">Brawler</button></li>
-                            <li><button class="class" id="dazzler" onclick="Dazzler()">Dazzler</button></li>
-                            <li><button class="class" id="duelist" onclick="Duelist()">Duelist</button></li>
-                            <li><button class="class" id="emperor" onclick="Emperor()">Emperor</button></li>
-                            <li><button class="class" id="hunter" onclick="Hunter()">Hunter</button></li>
-                            <li><button class="class" id="keeper" onclick="Keeper()">Keeper</button></li>
-                            <li><button class="class" id="mage" onclick="Mage()">Mage</button></li>
-                            <li><button class="class" id="mystic" onclick="Mystic()">Mystic</button></li>
-                            <li><button class="class" id="shade" onclick="Shade()">Shade</button></li>
-                            <li><button class="class" id="sharpshooter" onclick="Sharpshooter()">Sharpshooter</button>
+                        <div id="class2" style="height: auto;list-style: none;">
+                            <li><button class="class original" id="adept" onclick="Adept()"><img class="ori-img"  src="../image/class/adept.png" alt="">Adept</button></li>
+                            <li><button class="class original" id="assasin" onclick="Assasin()"><img class="ori-img"  src="../image/class/assassin.png" alt="">Assasin</button></li>
+                            <li><button class="class original" id="brawler" onclick="Brawler()"><img class="ori-img"  src="../image/class/brawler.png" alt="">Brawler</button></li>
+                            <li><button class="class original" id="dazzler" onclick="Dazzler()"><img class="ori-img"  src="../image/class/dazzler.png" alt="">Dazzler</button></li>
+                            <li><button class="class original" id="duelist" onclick="Duelist()"><img class="ori-img"  src="../image/class/duelist.png" alt="">Duelist</button></li>
+                            <li><button class="class original" id="emperor" onclick="Emperor()"><img class="ori-img"  src="../image/class/emperor.png" alt="">Emperor</button></li>
+                            <li><button class="class original" id="hunter" onclick="Hunter()"><img class="ori-img"  src="../image/class/hunter.png" alt="">Hunter</button></li>
+                            <li><button class="class original" id="keeper" onclick="Keeper()"><img class="ori-img"  src="../image/class/keeper.png" alt="">Keeper</button></li>
+                            <li><button class="class original" id="mage" onclick="Mage()"><img class="ori-img"  src="../image/class/mage.png" alt="">Mage</button></li>
+                            <li><button class="class original" id="mystic" onclick="Mystic()"><img class="ori-img"  src="../image/class/mystic.png" alt="">Mystic</button></li>
+                            <li><button class="class original" id="shade" onclick="Shade()"><img class="ori-img"  src="../image/class/shade.png" alt="">Shade</button></li>
+                            <li><button class="class original" id="sharpshooter" onclick="Sharpshooter()"><img class="ori-img"  src="../image/class/sharpshooter.png" alt="">Sharpshooter</button>
                             </li>
-                            <li><button class="class" id="vanguard" onclick="Vanguard()">Vanguard</button></li>
+                            <li><button class="class original" id="vanguard" onclick="Vanguard()"><img class="ori-img"  src="../image/class/vanguard.png" alt="">Vanguard</button></li>
                         </div>
                     </ul>
                 </div>
@@ -201,10 +201,10 @@
                         <p class="f-title">Elise</p>
                     </a>
     
-                    <a href="../html/champion/evelynn.html" style="text-decoration: none;">
+                    <!-- <a href="../html/champion/evelynn.html" style="text-decoration: none;">
                         <img class="characters-items coin-3" src="../image/champions/Evelynn.png" alt="">
                         <p class="f-title">Evelynn</p>
-                    </a>
+                    </a> -->
     
                     <a href="../html/champion/ezreal.html" style="text-decoration: none;">
                         <img class="characters-items coin-5" src="../image/champions/Ezreal.png" alt="">

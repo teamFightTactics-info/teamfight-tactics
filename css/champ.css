@@ -30,34 +30,37 @@ body, html {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 5vh;
-    background-color: #22223f;
-    position: fixed;
-    width: 100%;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    min-height: 5vh !important;
+    background-color: #22223f !important;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 2;
   }
   
   .logo {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 30px;
+    text-transform: uppercase !important;
+    letter-spacing: 5px !important;
+    font-size: 30px !important; 
   }
   
   .nav-links{
-      display: flex;
-      list-style: none;
-      justify-content: space-around;
-      width: 25%;
+      display: flex !important;
+      list-style: none !important;
+      justify-content: space-around !important;
+      width: 25% !important;
+      margin-top: auto !important;
+      margin-bottom: auto !important;
   }
   
   .nav-links a{
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: 3px;
-      font-weight: bold;
-      font-size: 14px;
+      color: #fff !important;
+      text-decoration: none !important;
+      letter-spacing: 3px !important;
+      font-weight: bold !important;
+      font-size: 14px !important;
   }
 
 #contain{
@@ -170,7 +173,7 @@ button{
     border-left: 5px solid #227aad;
     text-align: left;
     height: 35px;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
 
 }
@@ -184,7 +187,32 @@ button{
     height: 35px;
     font-size: 15px;
     color: #8f989d;
+    outline: none;
 }
+
+button.cost-sp:active {
+    background-color:#213042;
+}
+
+button.active {
+    background-color:#88a0a7 ;
+}
+
+/* li.cost-circle {
+    position: relative;
+}
+.cost-circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 100px;
+    transition: all .3s;
+} */
 
 .cost-img{
     width: 15px!important;
@@ -193,6 +221,7 @@ button{
     margin-right: 10px;
     opacity: .54;
     transition: opacity .3s;
+
 }
 
 .ori-img{
@@ -210,4 +239,9 @@ button{
     height: 35px;
     font-size: 15px;
     color: #8f989d;
+}
+
+.text{
+    display: block;
+    width: 100%;
 }
